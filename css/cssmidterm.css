@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+/*Color schemes*/
+/*#4A467F;#DBD9FF;#938CFF;#6E6C7F;#7670CC;*/
+    
+
+*{
+	padding:0;
+	margin:0;
+}	
+body{
+	font-size: 100%;	
+  /** you can set this as 100% if you want **/
+	background-color: #7670CC;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #4A467F;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: 'arizonia', cursive;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: "Droid Serif", serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: "Droid Serif", serif;
+	color: #4A467F;	
+}
+h4{
+    font-family: "Droid Serif", serif;
+}
+p, li, a{
+	font-weight: 400;
+	font-family: "Open Sans", sans-serif;
+	color: #6E6C7F;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: #fff;
+    max-width: 1080px;
+    padding: 0;
+    margin: 0 auto;
+ }
+.navbar li{
+  float: left;
+  width: 100%;
+  list-style: none;
+}
+
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+    background-color: #DBD9FF;
+    text-align: center;
+    color: #4A467F;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+	width: 25%;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+   
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #7670CC;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #4A467F;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #4A467F;	
+	background-color: #DBD9FF;
+}
+
+/**********************************
+Responsive parameters
+**********************************/
+*{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* -- Layout Breakpoints -- */
+/*499px and less*/
+@media all and (max-width:499px){
+    .nav{
+        width:100%
+    }
+    .navbar li{
+        float: left;
+        width:50%; 
+    }
+    
+}
+
+
+/*Between 719px and 500px*/
+@media all and (min-width:500px) and (max-width:719px){
+    
+     .nav, .main{
+        width: 100%;
+    }
+    
+    .two{
+        width:50%;
+        float: left;
+    }
+    .three{
+        width:50%;
+        float: left;
+    }
+    .footer{
+        clear:both;
+    }
+
+}
+
+/*width between 1080px and 720px */
+@media all and (min-width:720px) and (max-width:1080px){
+   
+    .nav{
+        width: 100%;
+    
+    }
+    .main, .two, .three{
+        width:33%;
+        float: left;
+    }
+    .footer{
+        clear: both;
+    }
+    
+}
+
+/*Width:1080px: All 4 columns side by side*/
+
+@media all and (min-width:1080px){
+     .nav,.main, .two, .three{
+      float: left;
+      width:25%     
+    }
+    .nav{
+        width:250px;   
+    }
+    
+    .navbar li{
+        float: none;
+        width: 100%; 
+    }
+    .navbar a{
+        text-align: left;
+    }
+.footer{
+    clear: both;
+}
+   
+    
+}
+
+
+
+
+    
